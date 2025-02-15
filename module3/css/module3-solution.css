@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+}
+
+#header-nav {
+    font-size: 20px;
+    background-color: lightgray;
+    border-radius: 0%;
+    border: 0%;
+}
+
+#img {
+    background: url(../images/2976639.jpg) no-repeat center center;
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    position: relative;
+}
+
+.content1, .content2, .content3 {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    margin-right: 20px;
+    position: relative;
+    background-color: lightgray;
+}
+
+@media (min-width: 992px) {
+    .content1, .content2, .content3 {
+        width: 20%;
+        height: 30%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .content1, .content2, .content3 {
+        width: 40%;
+        height: 30%;
+        float: left;
+    }
+
+    .content3 {
+        width: 40%;
+        height: 30%;
+        margin-top: 0px;
+        float: left;
+        position: relative;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .content1, .content2, .content3 {
+        width: 50%;
+        margin-bottom: 20px;
+        float: top;
+    }
+}
+
+.content1 span, .content2 span, .content3 span {
+    border: 1px solid black;
+    font-weight: bold;
+    text-align: right;
+    top: 0%;
+    right: 0%;
+    font-size: 18px;
+    position: absolute;
+}
+
+.content1 span {
+    background-color: lightcoral;
+}
+
+.content2 span {
+    background-color: lightblue;
+}
+
+.content3 span {
+    background-color: lightgreen;
+}
